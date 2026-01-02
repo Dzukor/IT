@@ -449,7 +449,3 @@ Rejestracja nowego użytkownika
 - `400` - Niepoprawne dane (za krótkie hasło lub brak danych)
 - `409` - Użytkownik już istnieje
 - `500` - Błąd serwera
-
-## Licencja
-
-Projekt edukacyjny - brak licencji
