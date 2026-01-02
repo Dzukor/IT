@@ -37,7 +37,7 @@ const bcrypt = require('bcryptjs');
 const path = require('path');
 ```
 
-[**Linie 1-4**](server.js:1): Import niezbędnych modułów:
+[**Linie 1-4**](server.js#L1): Import niezbędnych modułów:
 - `express` - framework do tworzenia serwera HTTP
 - `mysql2/promise` - asynchroniczny sterownik MySQL
 - `bcryptjs` - biblioteka do bezpiecznego hashowania haseł
