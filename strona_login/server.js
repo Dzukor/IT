@@ -7,9 +7,9 @@ const app = express();
 const PORT = 3000;
 
 const dbConfig = {
-    host: '192.168.100.100',
-    user: 'website_user',
-    password: 'Haslo123!',
+    host: 'ip',
+    user: 'database_user',
+    password: 'password',
     database: 'website'
 };
 
