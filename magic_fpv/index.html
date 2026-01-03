@@ -3,110 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Aleks Kozlowski" />
-    <title>MagicFpv</title>
-    <!-- PNG favicon (nowoczesne przeglądarki) -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./photos/Logo32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./photos/Logo16x16.png">
-    
-    <!-- Apple Touch Icon (iOS) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./photos/Logo180x180.png">
-    
-    <!-- Android Chrome -->
-    <link rel="icon" type="image/png" sizes="192x192" href="./photos/Logo192x192.png">
+    <title>Magic FPV Studio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav id="nav">
-      <div class="logo">
-        <a href="#nav">
-          <img src="./photos/Logo.png" alt="logo" style="width: 95px" />
-        </a>
-      </div>
-      <section>
-        <a href="#about" class="option">About</a>
-        <a href="#portfolio" class="option">Portfolio</a>
-        <a href="#socials" class="option">Socials</a>
-        <a href="./services.html" class="option">Services</a>
-        <a href="#contact" class="option">Contact </a>
-      </section>
-      <a href="#nav">
-        <img src="./photos/Logo.png" alt="logo" style="width: 95px" />
+    <nav class="nav">
+      <a href="#top" class="logo">
+        <img src="./photos/Logo.png" alt="Magic FPV logo" />
       </a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#socials">Socials</a>
+        <a href="./services.html">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
-    <br /><br /><br /><br />
-    <main>
-      <section class="form">
-        <h2>From the first shot to the last emotion.</h2>
+
+    <main id="top" class="container">
+      <section class="hero">
+        <h1>From the first shot to the last emotion.</h1>
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLScFO6pawoA0b2DagRI-OP48ICP4Jhi3EiKMiASweNXLPjaraQ/viewform?usp=preview"
-          class="notification"
-          >📝Form</a
+          class="btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScFO6pawoA0b2DagRI-OP48ICP4Jhi3EiKMiASweNXLPjaraQ/viewform"
         >
+          📝 Fill the form
+        </a>
       </section>
-      <section class="about" id="about">
+
+      <section id="about" class="card">
         <h2>About</h2>
         <p>
-          Magic FPV Studio creates professional videos using drones and
-          cutting-edge tech. We operate across the UK and beyond, delivering
-          creative and high-quality productions. Choose Magic FPV Studio for
-          exceptional results!
+          Magic FPV Studio creates cinematic drone and ground footage for
+          brands, events and individuals across the UK and beyond.
         </p>
       </section>
-      <section class="portfolio collapsed" id="portfolio">
-        <h2 onclick="showportfolio()" class="videos-show">A few of our projects ↓</h2>
+
+      <section id="portfolio" class="portfolio collapsed">
+        <h2 class="portfolio-title" id="portfolioToggle">
+          A few of our projects ↓
+        </h2>
+
+        <div class="videos-wrapper">
+          <div class="videos">
+            <video controls preload="metadata">
+              <source src="./videos/Gosia&Grzegorz.mp4" type="video/mp4" />
+            </video>
+
+            <video controls preload="metadata">
+              <source src="./videos/Lanzarote_1.mp4" type="video/mp4" />
+            </video>
+
+            <video controls preload="metadata">
+              <source src="./videos/Ford-LTD.mp4" type="video/mp4" />
+            </video>
+
+            <video controls preload="metadata">
+              <source src="./videos/Lanzarote_2.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </section>
-      <div class="both_sections">
-        <section class="socials" id="socials">
-          <h2>🌐You can find us here</h2>
-          <a href="https://www.facebook.com/Magicfpvstudio"
-            ><img
-              src="./photos/facebook.png"
-              alt="facebook logo"
-              style="width: 3vw;"
-            />
-            <p>Facebook</p></a
+
+      <section class="grid">
+        <div id="socials" class="card">
+          <h2>🌐 Socials</h2>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">TikTok</a>
+        </div>
+
+        <div id="contact" class="card">
+          <h2>Contact</h2>
+          <a href="mailto:magicfpvstudio@gmail.com"
+            >📧 magicfpvstudio@gmail.com</a
           >
-          <a
-            href="https://www.instagram.com/magicfpvstudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            ><img
-              src="./photos/instagram.png"
-              alt="instagram logo"
-              style="width: 3vw; height: auto;"
-            />
-            <p>Instagram</p></a
-          >
-          <a href="https://youtube.com/@Magicfpvstudio?sub_confirmation=1"
-            ><img
-              src="./photos/youtube.png"
-              alt="youtube logo"
-              style="width: 3vw;"
-            />
-            <p>YouTube</p></a
-          >
-          <a
-            href="https://www.tiktok.com/@maciejkozl?is_from_webapp=1&sender_device=pc"
-            ><img
-              src="./photos/tiktok.png"
-              alt="tiktok logo"
-              style="width: 3vw;"
-            />
-            <p>TikTok</p></a
-          >
-        </section>
-        <section class="contact" id="contact">
-          <h1>Do you have any questions?</h1>
-          <h2>Write us an Email!</h2>
-          <a href="mailto:magicfpvstudio@gmail.com">📧 Drop an Email</a>
-          <h2>Or if you prefer write us a message!</h2>
-          <a href="tel:+447718330652">📞Write us</a>
-        </section>
-      </div>
+          <a href="tel:+447718330652">📞 +44 7718 330 652</a>
+        </div>
+      </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 Magic FPV Studio. All rights reserved.</p>
-        <p>Designed and developed by Aleks Kozlowski</p>
+      <p>© 2026 Magic FPV Studio</p>
+      <p>Designed & developed by Aleks Kozlowski</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
