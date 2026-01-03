@@ -1,0 +1,321 @@
+body, html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-attachment: fixed;
+    background-image: url(./photos/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: antiquewhite;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-spacing: 15px;
+    height: 10vh;
+    font-size: 1.2vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav a{
+    color: rgb(255, 255, 255);
+}
+.option{
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.option:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+.form{
+    margin-top: 4%;
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 1%;
+    border-radius: 15px;
+}
+.form h2 {
+    font-size: 2.2vw;
+    background-image: url(./photos/animation.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: slide 1s ease-out, photo-text 20s linear infinite;
+}
+.notification{
+    font-size: 1vw;
+    padding: 10px 30px;
+    border-radius: 15px;
+    color: black;
+    background: linear-gradient(135deg, #F4A460 0%, #F5DEB3 30%, #E6A157 70%, #CD8540 100%);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.notification:hover{
+    transform: scale(1.2) !important;
+}
+.about{
+    margin-top: 4%;
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 1%;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+.about h2{
+    font-size: 1.5vw;
+    color: rgba(236, 161, 118, 0.74)
+}
+.about p{
+    text-align: center;
+    font-size: 1vw;
+}
+.about:hover{
+    transform: scale(1.2);
+}
+.portfolio{
+    margin-top: 4.5%;
+    margin-bottom: 4.5%;
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 1%;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.portfolio h2{
+    font-size: 1.5vw;
+    color: rgb(236, 161, 118);
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.both_sections {
+    display: flex;
+    gap: 2%;
+    margin: 5% 25%;
+}
+
+.socials, .contact {
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 48%;
+    padding: 1%;
+    border-radius: 15px;
+}
+.socials h2{
+    font-size: 1.5vw;
+    color: rgb(236, 161, 118)
+}
+.socials a{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: rgb(236, 161, 118);
+    font-size: 1vw;
+}
+.socials a p{
+    padding: 2%;
+    align-content: center;
+    color: rgb(236, 161, 118);
+}
+.socials a:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.contact h1{
+    font-size: 1.7vw;
+    color: rgb(236, 161, 118)
+}
+.contact h2{
+    font-size: 1.5vw;
+    color: rgb(236, 161, 118)
+}
+.contact a{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: rgb(236, 161, 118);
+    font-size: 1.2vw;
+}
+.contact a:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.back{
+    margin-top: 4%;
+    font-size: 1vw;
+    padding: 10px 30px;
+    border-radius: 15px;
+    color: black;
+    background: linear-gradient(135deg, #F4A460 0%, #F5DEB3 30%, #E6A157 70%, #CD8540 100%);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.back:hover{
+    transform: scale(1.2);
+}
+
+.services{
+    display: flex;
+    gap: 5%;
+    margin: 2% 25%;
+}
+.left{
+    animation: slide-left 1s ease-out;
+}
+.right{
+    animation: slide-right 1s ease-out;
+}
+.service{
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 48%;
+    padding: 2%;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.service h2{
+    font-size: 1.5vw;
+    color: rgb(236, 161, 118)
+}
+.service:hover{
+    transform: scale(1.2);
+}
+footer{
+    float: left;
+    color: white;
+    font-size: 0.7vw;
+}
+
+@keyframes slide-left{
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right{
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes photo-text{
+    from{
+        background-position-x: 0;
+    }
+    to{
+        background-position-x: -900px;
+    }
+}
+
+
+.fade-in-title {
+    animation: titleFadeIn 0.5s ease-out;
+}
+
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio.expanding {
+    transform: scale(1.01);
+}
+
+.portfolio.collapsing {
+    transform: scale(0.99);
+}
+
+.portfolio.collapsed:hover {
+    transform: scale(1.2);
+}
+
+
+.portfolio.expanding,
+.portfolio.collapsing {
+    pointer-events: none; 
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    opacity: 0;
+}
+
+.videos video {
+    width: 75%;
+    margin: 0 auto;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.fade-in {
+    animation: fadeSlideIn 0.7s ease-out forwards;
+}
+
+.fade-out {
+    animation: fadeSlideOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
