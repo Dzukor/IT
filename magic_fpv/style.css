@@ -64,8 +64,8 @@ body {
     white-space: nowrap;
 }
 
-/* Responsywność nawigacji na telefony */
-@media (max-width: 767px) {
+
+@media (max-width: 470px) {
     .nav {
         padding: 0.6rem 1rem;
     }
