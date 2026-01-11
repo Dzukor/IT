@@ -1,0 +1,21 @@
+http:
+  routers:
+    nginx-secure:
+      rule: "Host(`domena`)"
+      entryPoints:
+        - websecure
+      service: nginx-service
+      tls:
+        certResolver: myresolver
+
+    nginx-http:
+      rule: "Host(`domena`)"
+      entryPoints:
+        - web
+      service: nginx-service
+
+  services:
+    nginx-service:
+      loadBalancer:
+        servers:
+          - url: "http://nginx:80"
